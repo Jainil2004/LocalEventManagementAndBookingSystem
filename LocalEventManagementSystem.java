@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class LocalEventManagementSystem {
     static {
         System.out.println("LocalEventManagementSystem Active");
-        System.out.println("Version: v1.0.0-alpha5\n");
+        System.out.println("Version: v1.0.0-beta1\n");
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -300,7 +300,7 @@ public class LocalEventManagementSystem {
                         break;
 
 //                    case which is used by a user to logout from the system. as at any given time there can only be a single user in the system
-                    case "Logout":
+                    case "logout":
                         if (currentUser != null) {
                             System.out.println("Thank you for using the Local Event Management System");
                             currentUser = null;
@@ -318,7 +318,7 @@ public class LocalEventManagementSystem {
 
 //                    default case when invalid operation is entered
                     default:
-                        System.out.println("invalid operation entered");
+                        System.out.println("invalid operation entered. please check the OPS panel and try again");
                         break;
                 }
 
